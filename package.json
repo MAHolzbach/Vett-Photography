@@ -1,0 +1,20 @@
+{
+  "name": "vett-photography",
+  "version": "1.0.0",
+  "description": "Photo site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Mike Holzbach",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^6.1.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {},
+  "keywords": []
+}
