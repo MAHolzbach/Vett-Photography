@@ -3,7 +3,7 @@ import Link from "next/link";
 export default () => (
   <div className="landing">
     <h1 className="header">Vett Photography</h1>;
-    <Link className="next-link" href="/portfolio">
+    <Link href="/portfolio">
       <a className="enter-link">ENTER</a>
     </Link>
     <style jsx>{`
