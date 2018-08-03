@@ -4,13 +4,16 @@
   "description": "Photo site",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
-    "build": "next build && next export",
+    "contentful": "node plugins/contentful.js",
+    "dev": "npm run contentful && next",
+    "build": "npm run contentful && next build && next export",
     "start": "next start"
   },
   "author": "Mike Holzbach",
   "license": "ISC",
   "dependencies": {
+    "contentful": "^6.1.2",
+    "dotenv": "^6.0.0",
     "next": "^6.1.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
