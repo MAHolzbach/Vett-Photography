@@ -4,7 +4,7 @@
   "description": "Photo site",
   "main": "index.js",
   "scripts": {
-    "contentful": "node plugins/contentful.js",
+    "contentful": "node ./plugins/contentful.js",
     "dev": "npm run contentful && next",
     "build": "npm run contentful && next build && next export",
     "start": "next start"
