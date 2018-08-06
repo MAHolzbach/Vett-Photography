@@ -9,7 +9,7 @@ export default () => (
     <Navbar />
     <div className="picture-array">
       {photos.forEach(photo => {
-        <Image src="photo.fields.file.url" />;
+        <Image src={photo.fields.file.url} />;
       })}
     </div>
 
