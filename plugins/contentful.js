@@ -8,10 +8,9 @@ const contentful = createClient({
 });
 
 (async () => {
-  const photos = await contentful.getAsset("2czUZ3VWIc68cyOoyGY4MW");
-  console.log("here");
+  const photos = await contentful.getAssets();
   fs.writeFileSync(
     resolve(__dirname, "../assets/contentful.json"),
-    JSON.stringify(photos.fields.file.url)
+    JSON.stringify(photos)
   );
 })();

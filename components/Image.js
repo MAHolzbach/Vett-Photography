@@ -1,6 +1,6 @@
-const Image = () => (
+const Image = props => (
   <div className="image-wrapper">
-    <img src="" alt="" className="image" />
+    <img src={props.src} alt="" className="image" />
   </div>
 );
 
