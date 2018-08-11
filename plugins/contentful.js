@@ -3,8 +3,8 @@ const createClient = require("contentful").createClient;
 const fs = require("fs");
 const { resolve } = require("path");
 const contentful = createClient({
-  space: process.env.GCS_SPACE,
-  accessToken: process.env.GCS_TOKEN
+  space: process.env.VP_SPACE,
+  accessToken: process.env.VP_TOKEN
 });
 
 (async () => {
