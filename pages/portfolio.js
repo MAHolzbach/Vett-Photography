@@ -12,6 +12,7 @@ export default () => (
     <style jsx>{`
       .picture-array {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
       }
     `}</style>
