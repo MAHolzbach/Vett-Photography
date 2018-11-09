@@ -35,6 +35,33 @@ export default () => (
         font-size: 30px;
         letter-spacing: 0.1em;
         text-decoration: none;
+        letter-spacing: 0px;
+        transition: all 280ms ease-in-out;
+      }
+      .enter-link:hover,
+      .enter-link:active {
+        letter-spacing: 5px;
+        transition: all 280ms ease-in-out;
+      }
+      .enter-link:after,
+      .enter-link:before {
+        border: 1px solid white;
+        content: " ";
+        display: block;
+        margin: 0 auto;
+        transition: all 280ms ease-in-out;
+        width: 0;
+      }
+      .enter-link:hover:after,
+      .enter-link:hover:before {
+        border-color: white;
+        transition: width 350ms ease-in-out;
+        width: 70%;
+      }
+      .enter-link:hover:before {
+        bottom: auto;
+        top: 0;
+        width: 70%;
       }
     `}</style>
     <style jsx global>{`

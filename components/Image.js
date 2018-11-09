@@ -7,6 +7,11 @@ const Image = props => (
         height: 400px;
         width: auto;
         margin: 10px;
+        transition: all 280ms ease;
+      }
+      .image:hover {
+        transform: scale(1.02);
+        cursor: pointer;
       }
     `}</style>
   </div>

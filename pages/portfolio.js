@@ -3,7 +3,11 @@ import Image from "../components/Image";
 import data from "../assets/contentful.json";
 
 const photos = data.items.map((item, index) => (
-  <Image src={item.fields.file.url} key={index} />
+  <Image
+    src={item.fields.file.url}
+    key={index}
+    className="picture-array__photo"
+  />
 ));
 export default () => (
   <div className="portfolio">
